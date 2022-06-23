@@ -37,18 +37,18 @@ function App() {
 
                 
                 
-                <Route path="/about" element={<About />} />
+                <Route path="/say-it-project/about" element={<About />} />
                 { !user &&
                   <>
-                    <Route path="/signin" element={<Signin />} />
-                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/say-it-project/signin" element={<Signin />} />
+                    <Route path="/say-it-project/signup" element={<Signup />} />
                   </>
                 }
                 { user && 
                   <>
-                    <Route path="/createpost" element={<CreatePost />} />
-                    <Route path="/myposts" element={<MyPosts user={user} />} />
-                    <Route path="/editpost/:id" element={<Middleware component={EditPost} />} />
+                    <Route path="/say-it-project/createpost" element={<CreatePost />} />
+                    <Route path="/say-it-project/myposts" element={<MyPosts user={user} />} />
+                    <Route path="/say-it-project/editpost/:id" element={<Middleware component={EditPost} />} />
                   </>
                 }
 

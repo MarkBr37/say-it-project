@@ -15,8 +15,8 @@ function NavBar({user}){
                 <Nav className="me-auto">
 
                     <NavLink className='nav-link' to="/say-it-project/home">Home</NavLink>
-                    {user && <NavLink className='nav-link' to="/myposts">My Posts</NavLink>}
-                    <NavLink className='nav-link' to="/about">About</NavLink>
+                    {user && <NavLink className='nav-link' to="say-it-project/myposts">My Posts</NavLink>}
+                    <NavLink className='nav-link' to="/say-it-project/about">About</NavLink>
 
                 </Nav>
                 <Nav className='flota-end'>
