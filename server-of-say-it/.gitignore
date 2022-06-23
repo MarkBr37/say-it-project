@@ -1,2 +1,4 @@
 /node_modules
-/test0.http
+npm-debug.log
+.DS_Store
+/*.env

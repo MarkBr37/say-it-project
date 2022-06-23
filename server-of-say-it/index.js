@@ -19,5 +19,5 @@ app.use('/auth', auth)
 app.use('/posts', posts)
 
 
-const port = process.env.PORT || 8000;
-app.listen(port)
+const port = process.env.PORT || 3000;
+app.listen(port, '0.0.0.0')
