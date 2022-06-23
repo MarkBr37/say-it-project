@@ -1,7 +1,7 @@
 import {Component} from "react";
 import Joi from "joi";
 
-class Form extends Component{
+class FormPost extends Component{
 
     state = {
         data: {},
@@ -9,21 +9,18 @@ class Form extends Component{
     }
 
     validate = () => {
-        const options = {abortEarly:false};
-        const { error } = Joi.object(this.schema).validate(this.state.data, options);
+       
+        const { error } = Joi.object(this.schema).validate(this.state.data);
         
         if(!error) return null;
 
-        const errors = {};
-        for(let details of error.details) errors[details.path[0]] = details.message;
-        return errors;
+        return { post: error.details[0].message};
     }
 
     validateProperty = ({name, value}) => {
         if(!name) return null;
         if(!this.schema[name]) return null;
 
-        
         const { error } = Joi.object({[name]: this.schema[name]}).validate({[name]: value});
 
         return error ? error.details[0].message : null
@@ -53,4 +50,4 @@ class Form extends Component{
 
 }
 
-export default Form;
+export default FormPost;

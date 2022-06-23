@@ -1,7 +1,10 @@
-import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
+import {logout} from '../services/userServices';
 
-function NavBar(){
+function NavBar({user}){
+    
+
     return(
         <Navbar bg="dark" variant="dark" expand="md">
             <Container>
@@ -12,20 +15,25 @@ function NavBar(){
                 <Nav className="me-auto">
 
                     <NavLink className='nav-link' to="/">Home</NavLink>
+                    {user && <NavLink className='nav-link' to="/myposts">My Posts</NavLink>}
                     <NavLink className='nav-link' to="/about">About</NavLink>
 
                 </Nav>
                 <Nav className='flota-end'>
-                    <NavLink className="nav-link" to="/signin">Signin</NavLink>
-                    <NavLink className="nav-link" to="/signup">Signup</NavLink>
-
-                 {/*  <NavDropdown title="userName" id="basic-nav-dropdown float-start">
-                    <NavLink data-rr-ui-dropdown-item 
-                    className='dropdown-item' to="/profile">Profile</NavLink>
-                    <NavLink data-rr-ui-dropdown-item 
-                    className='dropdown-item' to="/profile">Logout</NavLink>
-            
-                  </NavDropdown> */}
+                    {!user && 
+                    <>
+                        <NavLink className="nav-link" to="/signin">Signin</NavLink>
+                        <NavLink className="nav-link" to="/signup">Signup</NavLink>
+                    </>
+                    }
+                    {user &&
+                    <NavDropdown title={user.name} id="basic-nav-dropdown float-start">
+                        <Button data-rr-ui-dropdown-item 
+                        className='dropdown-item' to="/profile">Profile</Button>
+                        <Button data-rr-ui-dropdown-item onClick={logout}
+                        className='dropdown-item' to="/profile">Logout</Button>
+                    </NavDropdown> 
+                    }
                 </Nav>
               </Navbar.Collapse>
             </Container>

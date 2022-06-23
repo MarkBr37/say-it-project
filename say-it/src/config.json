@@ -1,0 +1,10 @@
+{
+    "srverUrl":"http://localhost:8000",
+    "signup":"/users/create",
+    "signin":"/auth",
+    "createPostUrl": "/posts/create",
+    "allPosts": "/posts/all",
+    "posts": "/posts/",
+    "myPosts": "/posts/my",
+    "home":"http://localhost:3000/"
+}

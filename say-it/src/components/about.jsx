@@ -1,16 +1,14 @@
 import PageTitle from "./common/pageTitle";
 
 function About(){
+    
     return(
         <div className="p-2">
             <PageTitle title={'About'} />
             <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Culpa vel alias possimus 
-                accusamus aut doloremque placeat distinctio 
-                vero mollitia voluptates est, qui
-                cum fugiat quod dolorem obcaecati 
-                tempore non perferendis!
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Consequuntur blanditiis ullam, ut magnam, enim aliquid quia possimus 
+                voluptas voluptate laudantium aut officia cupiditate commodi totam ducimus quasi recusandae est eius.
             </p>
         </div>
 
