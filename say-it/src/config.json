@@ -1,5 +1,5 @@
 {
-    "srverUrl":"http://localhost:8000",
+    "srverUrl":"https://server-of-say-it.herokuapp.com",
     "signup":"/users/create",
     "signin":"/auth",
     "createPostUrl": "/posts/create",
