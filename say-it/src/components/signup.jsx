@@ -68,7 +68,7 @@ class Signup extends FormComponent{
 
       return(
         <>
-            { this.state.redirect && <Navigate to='/say-it-project/signin' replace={true}/> }
+            { this.state.redirect && <Navigate to='/signin' replace={true}/> }
 
               <PageTitle title={"SignUp"} />
               <Form method="POST" onSubmit={this.handleSubmit} autoCapitalize="off" autoComplete='off'>

@@ -71,7 +71,7 @@ class EditPost extends FormComponent{
 
     return(
       <>
-        { this.state.redirect && <Navigate to='/say-it-project/home' replace={true}/> }
+        { this.state.redirect && <Navigate to='/home' replace={true}/> }
 
           <PageTitle title={"Create Post"} />
           <Form method="POST" onSubmit={this.handleSubmit} autoCapitalize="off" autoComplete='off'>
@@ -89,7 +89,7 @@ class EditPost extends FormComponent{
             <Button variant="primary" type="submit" disabled={this.validate()} >
               Create post
             </Button>{' '}
-            <Link className="btn btn-secondary ms-2 btn-sm" to="/say-it-project/">Cancel</Link>                    
+            <Link className="btn btn-secondary ms-2 btn-sm" to="/">Cancel</Link>                    
           </Form>
 
           <Modal centered show={showModal}  animation={false}>

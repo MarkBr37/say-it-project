@@ -8,22 +8,22 @@ function NavBar({user}){
     return(
         <Navbar bg="dark" variant="dark" expand="md">
             <Container>
-                <NavLink className="navbar-brand" to="/say-it-project/home">Say it</NavLink>
+                <NavLink className="navbar-brand" to="/home">Say it</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="me-auto">
 
-                    <NavLink className='nav-link' to="/say-it-project/home">Home</NavLink>
-                    {user && <NavLink className='nav-link' to="say-it-project/myposts">My Posts</NavLink>}
-                    <NavLink className='nav-link' to="/say-it-project/about">About</NavLink>
+                    <NavLink className='nav-link' to="/home">Home</NavLink>
+                    {user && <NavLink className='nav-link' to="/myposts">My Posts</NavLink>}
+                    <NavLink className='nav-link' to="/about">About</NavLink>
 
                 </Nav>
                 <Nav className='flota-end'>
                     {!user && 
                     <>
-                        <NavLink className="nav-link" to="/say-it-project/signin">Signin</NavLink>
-                        <NavLink className="nav-link" to="/say-it-project/signup">Signup</NavLink>
+                        <NavLink className="nav-link" to="/signin">Signin</NavLink>
+                        <NavLink className="nav-link" to="/signup">Signup</NavLink>
                     </>
                     }
                     {user &&

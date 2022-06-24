@@ -65,7 +65,7 @@ class CreatePost extends FormComponent{
 
     return(
       <>
-        { this.state.redirect && <Navigate to='/say-it-project/' replace={true}/> }
+        { this.state.redirect && <Navigate to='/' replace={true}/> }
 
           <PageTitle title={"Create Post"} />
           <Form method="POST" onSubmit={this.handleSubmit} autoCapitalize="off" autoComplete='off'>
