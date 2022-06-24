@@ -5,14 +5,15 @@ import { getCurrentUser } from './services/userServices';
 import {  Container } from 'react-bootstrap';
 
 import NavBar from './components/navbar';
+import Footer from './components/footer';
 import Home from './components/home';
 import About from './components/about';
 import Signin from './components/signin';
 import Signup from './components/signup';
 import CreatePost from './components/posts/createPost';
 import EditPost from './components/posts/editPost';
-import Middleware from './components/middleware';
 import MyPosts from './components/posts/myposts';
+import Middleware from './components/middleware';
 
 
 
@@ -31,7 +32,7 @@ function App() {
         <header>
           <NavBar user={user} />
         </header>
-        <main>
+        <main className="ming-900">
             <Container>
               <Routes>
 
@@ -57,7 +58,9 @@ function App() {
               </Routes>
             </Container>
         </main>
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
   );
 }

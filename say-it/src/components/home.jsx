@@ -51,7 +51,7 @@ class Home extends Component{
                     <Link className="btn btn-primary mt-2" to="/createpost">Create post</Link>    
 
                     {!loading &&
-                        <>
+                    <>
                         { posts.length > 0 && posts.map((post)=> {
                             return <Post 
                             key={post._id} 

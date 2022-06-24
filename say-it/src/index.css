@@ -17,6 +17,10 @@ html, .App{
 
  /* My class */
 
+ .ming-900 {
+  min-height: 900px;
+}
+ 
  .cardTitle{
   font-size: 1.55em;
  }
