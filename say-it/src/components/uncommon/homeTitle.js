@@ -12,7 +12,7 @@ function HomeTitle(){
             </p>
            
             <div>
-                <Link className="btn btn-primary" to="/signin">SignIn</Link>
+                <Link className="btn btn-primary me-2" to="/signin">SignIn</Link>
                 <Link className="btn btn-primary ms-2" to="/signup">SignUp</Link>
             </div>
                 
