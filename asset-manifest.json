@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/say-it-project/static/css/main.ce836696.css",
-    "main.js": "/say-it-project/static/js/main.9fc7c213.js",
+    "main.js": "/say-it-project/static/js/main.0058c7f7.js",
     "static/js/787.640cc05d.chunk.js": "/say-it-project/static/js/787.640cc05d.chunk.js",
     "index.html": "/say-it-project/index.html",
     "main.ce836696.css.map": "/say-it-project/static/css/main.ce836696.css.map",
-    "main.9fc7c213.js.map": "/say-it-project/static/js/main.9fc7c213.js.map",
+    "main.0058c7f7.js.map": "/say-it-project/static/js/main.0058c7f7.js.map",
     "787.640cc05d.chunk.js.map": "/say-it-project/static/js/787.640cc05d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce836696.css",
-    "static/js/main.9fc7c213.js"
+    "static/js/main.0058c7f7.js"
   ]
 }
