@@ -47,7 +47,7 @@ class Signup extends FormComponent{
     }catch(error){
 
       this.setState({showModal: false})
-      console.log(error);
+      
       const { response: res } = error;
 
       if( res && res.status === 400){
